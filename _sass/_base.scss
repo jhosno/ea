@@ -8,9 +8,13 @@ $light: #EDE9D6;
 $main-red: #A71D31;
 $second-red: #780000;
 
+//fonts
+$enfasis-font: 'Courier Prime', monospace;
+$base-font: 'Raleway', sans-serif;
+
+
+
 /*
-
-
 -----------------
 -----LAYOUT------
 -----------------
@@ -23,13 +27,13 @@ body{
   }
   
   h1, h2, h3, h4, a, nav {
-    font-family: 'Courier Prime', monospace; 
+    font-family: $enfasis-font; 
     text-decoration: none;
     color: $nero;
   }
   
-  p {
-    font-family: 'Raleway', sans-serif;
+  p, span {
+    font-family: $base-font;
 }
 
 section{
@@ -229,13 +233,16 @@ padding: 0 10px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 .carrusel {
-  width: 750 px ;
+  width: 700px ;
   text-align: center;
   overflow: hidden;
+ 
+
    a {
     display: inline-flex;
     width: 1.5rem;
@@ -284,15 +291,21 @@ padding: 0 10px;
     &::-webkit-scrollbar-track {
       background: transparent;
     }
+
+    //contenedor
     & > div {
       scroll-snap-align: start;
       flex-shrink: 0;
-      width: 300px;
-      height: 300px;
+      width: 700px;
+      height: 400px;
       margin-right: 50px;
+      border-color: $nero;
       border-radius: 10px;
-      background: $nero;
-      color: $main-red;
+      border-style: none solid solid none;
+  
+      
+      background: $light;
+      color: $nero;
       transform-origin: center center;
       transform: scale(1);
       transition: transform 0.5s;
@@ -301,7 +314,7 @@ padding: 0 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 100px;
+      
     }
     * {
       box-sizing: border-box;
@@ -347,7 +360,7 @@ padding: 0 10px;
       height: 300px;
       margin-right: 50px;
       border-radius: 10px;
-      background: #eee;
+      background: $light;
       transform-origin: center center;
       transform: scale(1);
       transition: transform 0.5s;
@@ -373,7 +386,7 @@ padding: 0 10px;
     .author-info a {
       color: white;
     }
-    img {
+    -img {
       object-fit: cover;
       position: absolute;
       top: 0;
@@ -404,6 +417,36 @@ padding: 0 10px;
   color: $light;
 }
 
+.slides-content{
+  display: flex;
+  padding: 3rem;
+  
+  .slides-img{
+    width: 10rem;
+    
+    border-radius: 10px;
+    
+  }
+  .header-content{
+    margin-left: 2rem;
+  }
+  .h {
+    font-family: $enfasis-font;
+    font-size: 2em;
+    color: $main-red;
+    line-height: 1rem;
+    text-align: center;
+  }
+  span{
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1rem;
+    
+  }
+  p{
+    text-align: justify;
+  }
+}
 
 /*
 -----------------
