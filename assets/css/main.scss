@@ -32,19 +32,33 @@
 //     }
 // }
 
-// variables.less
+// variables
+
+//colors
 $nero : #292929;
 $dark-nero: #1B1B1B;
 $light: #EDE9D6;
 $main-red: #A71D31;
 $second-red: #780000;
 
+
+//fonts
 $enfasis-font: 'Courier Prime', monospace;
 $base-font: 'Raleway', sans-serif;
+
+
+//breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-movil: 400px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 
-        "base"
+        "base",
+        "navbar",
+        "header",
+        "project",
+        "testimonials",
+        "footer"
 ;
