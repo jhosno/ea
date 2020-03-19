@@ -1,0 +1,47 @@
+/*
+-----------------
+-----footer------
+-----------------
+*/
+footer {
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: $nero;
+    color: $light;
+  
+    a{
+      color: $light;
+      font-size: 1rem;
+      padding: 15px;
+    
+      &:hover{
+        color: $main-red;
+      }
+    }
+  
+  }
+  .footer{
+    position: relative;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  /*https://i.imgur.com/2cn0oMe.png*/
+  .footer{
+    //background: url("../images/1x/flower-footer.png") no-repeat  center;
+    display: block;
+    position: relative;
+    z-index: -12;
+  
+    img{
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+    }
+  }
+  

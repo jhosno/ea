@@ -6,37 +6,108 @@
 
 
 .header{
+    height: 90vh;
+    position: relative;
     color: $light;
-    background: $nero;
-    background: linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(27,27,27,1) 100%);
+    z-index: -999;
+   
+  } 
+.hero{
+
+  height: 20vh;
+  background: $nero;
+  background: linear-gradient(0deg, rgba(41,41,41,1) 0%, rgba(27,27,27,1) 100%);
+
+  display: block;
+  position: relative;
+  z-index: -1;
   
-    h1  {
-      color: $main-red;
-      font-size: 5rem;
-      font-style: italic;
-      font-weight: 700;
-      line-height: 0rem;
-      letter-spacing: 5px;
-      
-    }
-  
-    h3 {
-      color: $light;
-      font-size: 3rem;
-      line-height: 0rem;
-     
-    }
-  
-    p {
-      font-size: 2rem;
-    }
-  
+}
+.hero-bg{
+  position: absolute;
+  top: 10vh;
+  left: 20vw;
+
+  z-index: 400;
+  .perfil{
+
+    position: absolute;
+    top: -15vh;
+    height: 40rem;
+    right: -37vw;
   }
-  
-  
-  .header-img{
-    padding-left: 3rem;
-    max-height: 35rem;
-    max-width: auto;
+}
+.header-text{
+  position: absolute;
+  top: 25vh;
+  left: 42vw;
+
+  z-index: 500;
+
+  .title-header {
+    color: $main-red;
+    font-size: 5rem;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0rem;
+    letter-spacing: 5px;
     
   }
+
+  .th-white{
+    color: $light;
+  }
+  .header-rol{
+    background-color: $main-red;
+    height: 10vh;
+    width: 30vw;
+
+    border-radius: 70px;
+
+    h1{
+      text-align: center;
+      color: $light;
+      font-size: 4rem;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 0rem;
+      letter-spacing: 3px;
+
+
+    }
+  }
+}
+   
+
+.header-rrss{
+  height: 15vh;
+  width: 60vw;
+  background-color: $main-red;
+  border-radius: 100px 0 0 0 ;
+
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 800;
+
+  a{
+    color: $light;
+    font-size: 1.5rem;
+    transition: 0.4s hover;
+    text-align: center;
+    padding: 6vh 3vw;
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover{
+      color: $nero;
+    }
+  }
+}
