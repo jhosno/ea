@@ -1,86 +1,59 @@
-
-
-
-
-/*
------------------
------LAYOUT------
------------------
-*/
-
 body{
-    background-color: $light;
-    margin: 0;
-    padding: 0 ;
-    background: $nero;
-    background: linear-gradient(0deg, rgba(242,242,242,1) 0%, rgba(237,233,214,1) 100%);
-  }
-  
-  h1, h2, h3, h4, a, nav {
-    font-family: $enfasis-font; 
-    text-decoration: none;
-    color: $nero;
-  }
-  
-  p, span {
-    font-family: $base-font;
+  background: $light-primary;
+  margin: 0;
+  padding: 0;
+  font-family: $title;
 }
-
-section{
-  padding: 4rem 8rem;
-  display:flex;
-  justify-content: space-around;
-  max-width: 100%  ;
-}
-
-.title-3{
-  color: $main-red;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 0rem;
-}
-
-
-
-
-
 
 
 /*
 -----------------
------botton------
+----bottons----
 -----------------
 */
-.main-button{
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 5px;
 
-  color: $light;
-  background-color: $main-red;
-
-  padding: 15px 25px;
-  
-  border-radius: 6px;
-  transition: 0.4s;
-  &:hover{
-    color: $main-red;
-    background-color: $light;
-  }
-}
-
-.second-boton{
-  color: $second-red;
-  font-size: 2rem;
-  font-weight: bold;
-  transition: 0.4s;
+.btn-cta{
+  padding: 2rem;
+  color: $light-primary;
+  background: $darkest;
+  text-decoration: none;
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
 
   &:hover{
-    letter-spacing: 1rem;
-    color: $main-red;
+    padding: 2.5rem;
+    color: $light-primary;
+    background: $red-primary;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    font-size: 2rem;
   }
+
 }
 
+/*
+-----------------
+----scrollbar----
+-----------------
+*/
 
+/* width */
+::-webkit-scrollbar {
+  width: 1vw;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: $darkest;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $red-primary;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $dark;
+}

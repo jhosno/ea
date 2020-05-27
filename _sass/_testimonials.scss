@@ -10,8 +10,23 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    position: relative;
   }
   
+  .testimonials-img{
+    position: absolute;
+    height: 70vh;
+    top: 5vh;
+    right: 6vw;
+  }
+  .testimonials-wave{
+
+    position: absolute;
+    height: 70vh;
+    top: 22vh;
+    left: -40vw;
+    z-index: -1;
+  }
   .carrusel {
     width: 700px ;
     text-align: center;
@@ -29,8 +44,8 @@
       border-radius: 50%;
       margin: 0 0 0.5rem 0;
       position: relative;
-      background-color: $nero;
-      color: $light;
+      background-color: $dark;
+      color: $light-primary;
       transition: 1s hover;
       
     }
@@ -42,8 +57,8 @@
       height: 2rem;
     }
      a:focus {
-      background: $main-red;
-      color: $light;
+      background: $red-primary;
+      color: $light-primary;
     }
     
   
@@ -65,7 +80,7 @@
       height: 10px;
       }
       &::-webkit-scrollbar-thumb {
-        background: $main-red;
+        background: $red-primary;
         border-radius: 10px;
       }
       &::-webkit-scrollbar-track {
@@ -80,13 +95,13 @@
         width: 50vw;
         height: 50vh;
         margin-right: 50px;
-        border-color: $nero;
+        border-color: $dark;
         border-radius: 10px;
         border-style: none solid solid none;
     
         
-        background: $light;
-        color: $nero;
+        background: $light-primary;
+        color: $dark;
         transform-origin: center center;
         transform: scale(1);
         transition: transform 0.5s;
@@ -141,7 +156,7 @@
         height: 300px;
         margin-right: 50px;
         border-radius: 10px;
-        background: $light;
+        background: $light-primary;
         transform-origin: center center;
         transform: scale(1);
         transition: transform 0.5s;
@@ -185,7 +200,7 @@
   
   .author-info {
     background: rgba(0, 0, 0, 0.75);
-    color: $main-red;
+    color: $red-primary;
     padding: 0.75rem;
     text-align: center;
     position: absolute;
@@ -195,7 +210,7 @@
     margin: 0;
   }
   .author-info a {
-    color: $light;
+    color: $light-primary;
   }
   
   .slides-content{
@@ -212,9 +227,9 @@
       margin-left: 2rem;
     }
     .h {
-      font-family: $enfasis-font;
+      font-family: $title;
       font-size: 3vh;
-      color: $main-red;
+      color: $red-primary;
       line-height: 1rem;
       text-align: center;
     }
@@ -228,3 +243,4 @@
       text-align: justify;
     }
   }
+
