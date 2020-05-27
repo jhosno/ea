@@ -1,30 +1,47 @@
+
+/*
+-----------------
+----about me----
+-----------------
+*/
 #about{
   display: flex;
   justify-content: space-around;
   justify-items: center;
   align-items: center;
-  width: 100%;
-  height: 20vh;
+  width: 95%;
+  margin: 1rem;
+  
+  z-index: 6;
+  
   div{
-    width: 50%;
-    padding: 6rem;
     align-content: center;
     text-align: center;
+    margin-bottom: 5rem;
   }
+}
+.about-img{
+  width: 33%;
+  img{
+    width: 30vw;
+  }
+}
+.me{
+  width: 33%;
+  padding: 0 7rem 0 4rem;
   h3{
     font-size: 3rem;
     color: $red-second;
-    letter-spacing: 1rem;
+    letter-spacing: .5rem;
     text-align: center;
     text-transform: uppercase;
   }
 
-}
-
-.me{
   p{
     text-align: justify;
-    line-height: 3rem;
-    padding-bottom: 5rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
+
   }
+
 }

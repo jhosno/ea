@@ -1,246 +1,87 @@
+/*
+-----------------
+--bg parallax--
+-----------------
+*/
+
+.parallelogram-wrap{
+  height: 300vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 150%;
+  .parallelogram {
+    position: absolute;
+    -webkit-mask-image: url("../images/testimonials-path.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/testimonials-path.svg");
+    mask-size: cover;
+    height: 90%;
+    width: 100%;
+  }
+}
 
 /*
 -----------------
 ---testimonial---
 -----------------
 */
-.testimonials{
-    box-sizing: border-box;
+#testimonials{
+  margin-top: 1rem;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 20vh;
+  margin-right: .5rem;
+  padding: 3rem;
+  background: $dark;
+  display: flex;
+  color: $light-primary;
+  
+  .left{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .testimonials-img{
-    position: absolute;
-    height: 70vh;
-    top: 5vh;
-    right: 6vw;
-  }
-  .testimonials-wave{
-
-    position: absolute;
-    height: 70vh;
-    top: 22vh;
-    left: -40vw;
-    z-index: -1;
-  }
-  .carrusel {
-    width: 700px ;
+    width: 30%;
+    height: 100%;
     text-align: center;
-    overflow: hidden;
-   
-  
-     a {
-      display: inline-flex;
-      width: 1.5rem;
-      height: 1.5rem;
-  
-      text-decoration: none;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      margin: 0 0 0.5rem 0;
-      position: relative;
-      background-color: $dark;
-      color: $light-primary;
-      transition: 1s hover;
-      
-    }
-     a:active {
-      top: 1px;
-    }
-    a:hover{
-      width: 2rem;
-      height: 2rem;
-    }
-     a:focus {
-      background: $red-primary;
-      color: $light-primary;
-    }
+    align-content: center;
     
-  
-  }
-  .slides {
-      display: flex;
-      
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      
-      
-      
-      scroll-behavior: smooth;
-      -webkit-overflow-scrolling: touch;
-  
-  
-      &::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
-      }
-      &::-webkit-scrollbar-thumb {
-        background: $red-primary;
-        border-radius: 10px;
-      }
-      &::-webkit-scrollbar-track {
-        background: transparent;
-      }
-  
-      //contenedor
-      & > div {
-        scroll-snap-align: start;
-        flex-shrink: 0;
-        //700px h-400px
-        width: 50vw;
-        height: 50vh;
-        margin-right: 50px;
-        border-color: $dark;
-        border-radius: 10px;
-        border-style: none solid solid none;
-    
-        
-        background: $light-primary;
-        color: $dark;
-        transform-origin: center center;
-        transform: scale(1);
-        transition: transform 0.5s;
-        position: relative;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-      }
-      * {
-        box-sizing: border-box;
-      }
-      
-      .slider {
-        width: 300px;
-        text-align: center;
-        overflow: hidden;
-      }
-      
-      .slides {
-        display: flex;
-        
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        
-        
-        
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-        
-        /*
-        scroll-snap-points-x: repeat(300px);
-        scroll-snap-type: mandatory;
-        */
-      }
-      .slides::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-      }
-      .slides::-webkit-scrollbar-thumb {
-        background: black;
-        border-radius: 10px;
-      }
-      .slides::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      .slides > div {
-        scroll-snap-align: start;
-        flex-shrink: 0;
-        width: 300px;
-        height: 300px;
-        margin-right: 50px;
-        border-radius: 10px;
-        background: $light-primary;
-        transform-origin: center center;
-        transform: scale(1);
-        transition: transform 0.5s;
-        position: relative;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-      }
-     
-      .author-info {
-        background: rgba(0, 0, 0, 0.75);
-        color: white;
-        padding: 0.75rem; 
-        text-align: center;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-      }
-      .author-info a {
-        color: white;
-      }
-      -img {
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-  
-  }
-    /*
-    scroll-snap-points-x: repeat(300px);
-    scroll-snap-type: mandatory;
-    */
-  
-  
-  .author-info {
-    background: rgba(0, 0, 0, 0.75);
-    color: $red-primary;
-    padding: 0.75rem;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin: 0;
-  }
-  .author-info a {
-    color: $light-primary;
-  }
-  
-  .slides-content{
-    display: flex;
-    padding: 3rem;
-    
-    .slides-img{
+    img{
+      align-self: center;
+      justify-self: center;
+      height: auto;
       width: 10rem;
-      
-      border-radius: 10px;
-      
-    }
-    .header-content{
-      margin-left: 2rem;
-    }
-    .h {
-      font-family: $title;
-      font-size: 3vh;
-      color: $red-primary;
-      line-height: 1rem;
-      text-align: center;
-    }
-    span{
-      font-size: 1em;
-      font-weight: bold;
-      line-height: 1rem;
-      
-    }
-    p{
-      text-align: justify;
     }
   }
 
+  .right{
+    width: 70%;
+    text-align: justify;
+    
+    .right-head{
+      display: flex;
+      justify-content: space-between;
+      h4{
+        font-size: 1.5rem;
+        color: $red-primary;
+        font-weight: 900;
+        line-height: 0;
+        margin-top: 15.92;
+        margin-bottom: 12px;
+        margin-top: 5px;
+      }
+
+      .testimonials-data{
+        line-height: -1;
+        font-style: italic;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        
+      }
+    }
+
+  }
+}
