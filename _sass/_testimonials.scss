@@ -1,32 +1,9 @@
 /*
 -----------------
---bg parallax--
------------------
-*/
-
-.parallelogram-wrap{
-  height: 300vh;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 150%;
-  .parallelogram {
-    position: absolute;
-    -webkit-mask-image: url("../images/testimonials-path.svg");
-    -webkit-mask-size: cover;
-    mask-image: url("../images/testimonials-path.svg");
-    mask-size: cover;
-    height: 90%;
-    width: 100%;
-  }
-}
-
-/*
------------------
 ---testimonial---
 -----------------
 */
-#testimonials{
+#testimonials {
   margin-top: 1rem;
 }
 
@@ -38,16 +15,16 @@
   background: $dark;
   display: flex;
   color: $light-primary;
-  
-  .left{
+
+  .left {
     display: flex;
     flex-direction: column;
     width: 30%;
     height: 100%;
     text-align: center;
     align-content: center;
-    
-    img{
+
+    img {
       align-self: center;
       justify-self: center;
       height: auto;
@@ -55,14 +32,15 @@
     }
   }
 
-  .right{
+  .right {
     width: 70%;
     text-align: justify;
-    
-    .right-head{
+
+    .right-head {
       display: flex;
       justify-content: space-between;
-      h4{
+
+      h4 {
         font-size: 1.5rem;
         color: $red-primary;
         font-weight: 900;
@@ -72,14 +50,14 @@
         margin-top: 5px;
       }
 
-      .testimonials-data{
+      .testimonials-data {
         line-height: -1;
         font-style: italic;
         margin-block-start: 0em;
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        
+
       }
     }
 
