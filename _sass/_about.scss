@@ -1,30 +1,3 @@
-/*
------------------
---bg parallax--
------------------
-*/
-#parallelogram {
-  position: relative;
-  z-index: -1;
-
-  .parallelogram-wrap {
-    height: 255vh;
-    width: 100%;
-    position: absolute;
-
-    top: 175%;
-
-    .parallelogram {
-      position: absolute;
-      -webkit-mask-image: url("../images/testimonials-path.svg");
-      -webkit-mask-size: cover;
-      mask-image: url("../images/testimonials-path.svg");
-      mask-size: cover;
-      height: 90%;
-      width: 100%;
-    }
-  }
-}
 
 /*
 -----------------
@@ -56,13 +29,7 @@
 .me{
   width: 33%;
   padding: 0 7rem 0 4rem;
-  h3{
-    font-size: 3rem;
-    color: $red-second;
-    letter-spacing: .5rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
+
 
   p{
     text-align: justify;

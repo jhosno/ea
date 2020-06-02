@@ -1,80 +1,115 @@
 /*
 -----------------
+--bg parallax--
+-----------------
+*/
+#rectangle {
+  position: relative;
+  
+  z-index: -3;
+
+  .rectangle-wrap {
+    height: 130vh;
+    width: 100%;
+    position: absolute;
+    
+
+    .rectangle {
+      position: absolute;
+      -webkit-mask-image: url("../images/rectangle-path-2.svg");
+      -webkit-mask-size: cover;
+      mask-image: url("../images/rectangle-path-2.svg");
+      mask-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .gradient-contact{
+      background: $red-second;
+      background: linear-gradient(95deg, rgba(113, 22, 29, 0.6) 0%, rgba(197, 2, 2, 0.5) 85%);
+      mix-blend-mode: hard-light;
+      z-index: -1;
+    }
+  }
+}
+
+
+/*
+-----------------
 ----contact------
 -----------------
 */
 
-#contact{
-  height: 100vh;
-  margin-top: 10rem;
-  h3{
-    background-color: $red-second;
-    font-size: 3rem;
-    padding: 2rem;
-    color: $light-second;
-    letter-spacing: .5rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
+#contact {
+  height: 95vh;
+  margin: 5rem;
+  padding-bottom: 2rem;
+  background: $dark;
 
-  .email{
-    position: relative;
-    line-height: 1.5rem;
+  .email {
     display: flex;
+    justify-content: space-around;
+    line-height: 1.5rem;
     align-content: center;
     justify-items: center;
+    justify-content: center;
+    padding: 4rem;
+
 
     img{
-      width: 70%;
-      z-index: 1;
-      justify-self: center;
-      align-self: center;
-      margin: 0 10rem;
+      margin-left: 2rem;
+      height: 25rem;
+      width: auto;
     }
-    form{
-      left: 29%;
-      position: absolute;
-      z-index: 6;
-      bottom: 0;
-      top: 5%;
-      width: 33%;
+
+    .form {
+      width: 50%;
       text-align: justify;
+      padding: 2rem;
+      margin-left: 1.5rem;
+      background: $light-primary;
+      
+      p{
+        line-height: 1.5rem;
+      }
+      form{
+        display: inline-block;
+        
+      }
+      input{
+      
+        width: 45%;
+        margin-bottom: 1rem;
+      }
 
-
-
-      input, textarea{
+      input,
+      textarea {
         font-family: $title;
         color: $red-second;
         font-weight: 900;
-        border: none;
+ 
         outline: none;
-        background: none;
+        background: $light-second;
         font-size: 1rem;
-        border-bottom: .2rem solid $red-primary;
+        border: .2rem solid $dark;
         text-align: center;
         resize: none;
 
       }
-      input[type="submit"]{
-          text-align: center;
-          padding: 2rem;
-          color: $light-primary;
+
+      button {
+        width: 100%;
+        padding: 2rem;
+        color: $light-primary;
+        background: $red-second;
+        border: none;
+
+        &:hover {
+          color: $red-primary;
           background: $darkest;
-          text-decoration: none;
-          letter-spacing: .2rem;
-          font-size: 1.5rem;
-          border: none;
-        
-          &:hover{
-            padding: 2.5rem;
-            color: $light-primary;
-            background: $red-primary;
-            text-decoration: none;
-            letter-spacing: .2rem;
-            font-size: 2rem;
-          }
-        
+
         }
       }
     }
+
   }
+}

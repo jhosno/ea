@@ -1,3 +1,9 @@
+
+/*
+-----------------
+----layout----
+-----------------
+*/
 body{
   background: $light-primary;
   margin: 0;
@@ -5,14 +11,52 @@ body{
   font-family: $title;
 }
 
+h3{
+  font-size: 3rem;
+  color: $red-second;
+  letter-spacing: .5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+-----------------
+--- parallax ----
+-----------------
+*/
+
+.gradient {
+  background: $red-second;
+  background: linear-gradient(146deg, rgba(41, 41, 41, 0.6) 0%, rgba(197, 2, 2, 0.5) 85%);
+  mix-blend-mode: hard-light;
+  z-index: -1;
+}
+.doddles {
+  background: $red-primary;
+
+  z-index: -1;
+
+  img {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    font-size: 6rem;
+    width: 110vw;
+    top: -12%;
+    left: -4%;
+    -webkit-transform: translate(-505, -50%);
+    transform: translate(-505, -50%);
+  }
+}
 
 /*
 -----------------
 ----bottons----
 -----------------
 */
-
 .btn-cta{
+  font-family: $title;
+  text-align: center;
   padding: 2rem;
   color: $light-primary;
   background: $darkest;
