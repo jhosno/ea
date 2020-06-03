@@ -4,7 +4,7 @@
 -----------------
 */
 .pallarax-wrap {
-  height: 150vh;
+  height: 150%;
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -21,29 +21,6 @@
 
 
 }
-.gradient {
-  background: $red-second;
-  background: linear-gradient(146deg, rgba(41, 41, 41, 0.6) 0%, rgba(197, 2, 2, 0.5) 85%);
-  mix-blend-mode: hard-light;
-  z-index: -1;
-}
-.doddles {
-  background: $red-primary;
-
-  z-index: -1;
-
-  img {
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    font-size: 6rem;
-    width: 110vw;
-    top: -12%;
-    left: -4%;
-    -webkit-transform: translate(-505, -50%);
-    transform: translate(-505, -50%);
-  }
-}
 
 /*
 -----------------
@@ -55,7 +32,8 @@
   width: 100%;
   position: relative;
 }
-.welcome{
+
+.welcome {
   position: relative;
   display: flex;
   width: 100%;
@@ -65,22 +43,25 @@
   justify-items: center;
   z-index: 3;
 
-  .col-left{
+  .col-left {
     padding: 5rem;
     text-transform: uppercase;
     text-align: center;
-    h1{
+
+    h1 {
       font-size: 6rem;
 
       color: $light-primary;
       line-height: .5rem;
       letter-spacing: .1rem;
     }
-    .name{
-      font-size: 7rem ;
+
+    .name {
+      font-size: 7rem;
       letter-spacing: .6rem;
     }
-    h2{
+
+    h2 {
       font-size: 4.5rem;
       color: $light-primary;
       line-height: 2.5rem;
@@ -89,10 +70,58 @@
     }
   }
 
-  .col-right{
+  .col-right {
     padding-left: 5rem;
-    img{
-      width: 95%; 
+
+    img {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  #hero {
+    height: 75vh;
+  }
+
+  .welcome {
+    flex-flow: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+
+    .col-left {
+      padding: 0;
+
+      h1 {
+        font-size: 5rem;
+        letter-spacing: .1rem;
+      }
+
+      .name {
+        font-size: 6rem;
+        letter-spacing: .6rem;
+      }
+
+      h2 {
+        font-size: 4rem;
+        letter-spacing: .4rem;
+      }
+
+
+    }
+
+    .col-right {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 50%;
+        align-self: center;
+        justify-self: center;
+      }
     }
   }
 }

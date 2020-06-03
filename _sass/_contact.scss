@@ -5,14 +5,13 @@
 */
 #rectangle {
   position: relative;
-  
   z-index: -3;
 
   .rectangle-wrap {
     height: 130vh;
     width: 100%;
     position: absolute;
-    
+
 
     .rectangle {
       position: absolute;
@@ -23,7 +22,8 @@
       height: 100%;
       width: 100%;
     }
-    .gradient-contact{
+
+    .gradient-contact {
       background: $red-second;
       background: linear-gradient(95deg, rgba(113, 22, 29, 0.6) 0%, rgba(197, 2, 2, 0.5) 85%);
       mix-blend-mode: hard-light;
@@ -55,7 +55,7 @@
     padding: 4rem;
 
 
-    img{
+    img {
       margin-left: 2rem;
       height: 25rem;
       width: auto;
@@ -67,41 +67,48 @@
       padding: 2rem;
       margin-left: 1.5rem;
       background: $light-primary;
-      
-      p{
+
+
+      p {
         line-height: 1.5rem;
-      }
-      form{
-        display: inline-block;
-        
-      }
-      input{
-      
-        width: 45%;
-        margin-bottom: 1rem;
+        text-align: justify;
       }
 
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+
+      }
+
+ 
       input,
       textarea {
         font-family: $title;
         color: $red-second;
         font-weight: 900;
- 
+        width: 100%;
         outline: none;
         background: $light-second;
         font-size: 1rem;
         border: .2rem solid $dark;
         text-align: center;
         resize: none;
+        padding: .5rem;
+        margin-top: .5rem;
+        
 
       }
 
+
       button {
         width: 100%;
-        padding: 2rem;
+        padding: 1rem;
         color: $light-primary;
         background: $red-second;
         border: none;
+        margin: 1rem;
 
         &:hover {
           color: $red-primary;
@@ -111,5 +118,59 @@
       }
     }
 
+  }
+}
+
+@media (max-width: $tablet) {
+  #contact {
+    background: none;
+    margin: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+
+    .email {
+      padding: 0;
+
+      .form {
+        width: 100%;
+
+        form {
+          display: flex;
+          flex-flow: column;
+
+          input,
+          textarea {
+            font-size: 1.5rem;
+            display: block;
+            width: 100%;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+
+          }
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      img {
+        visibility: hidden;
+        display: none;
+      }
+    }
+
+  }
+
+  #rectangle {
+    position: relative;
+    z-index: -3;
+
+    .rectangle-wrap {
+      height: 80vh;
+      width: 100%;
+      position: absolute;
+    }
   }
 }

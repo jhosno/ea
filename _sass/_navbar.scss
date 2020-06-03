@@ -4,7 +4,7 @@
 -----------------
 */
 
-.brand{
+.brand {
   position: fixed;
 
   margin-left: 5rem;
@@ -13,83 +13,112 @@
   background: $dark;
   padding: 1.5rem;
   z-index: 10;
-  a{
+
+  a {
     color: $red-primary;
     text-decoration: none;
   }
-  } 
+}
 
-.navbar{
+.navbar {
   position: fixed;
   right: 2.5rem;
   text-transform: uppercase;
   z-index: 10;
-  
-  ul{
+
+  ul {
     list-style: none;
-    background: $dark ;
+    background: $dark;
     width: 100%;
     margin-block-start: 0;
-    
-    
 
-    li{
+
+
+    li {
+      .navbar-brand {
+        font-size: 2rem;
+        color: $red-primary;
+        font-weight: 900;
+        visibility: hidden;
+
+      }
+
       display: inline-block;
       padding: 1.5rem;
-      
-      &:hover{
+
+      &:hover {
         background: $red-primary;
-        font-weight: 900  ;
-        a{
+        font-weight: 900;
+
+        a {
           color: $dark;
         }
       }
-      }
+    }
 
 
-    a{
+    .nav-links{
       text-decoration: none;
       color: $light-primary;
       text-justify: center;
       font-weight: 500;
-      font-size: 1rem;}
+      font-size: 1rem;
+    }
 
-    .hireme{
-      color: $red-primary; 
+    .hireme {
+      color: $red-primary;
       font-weight: 900;
 
-      }
+    }
   }
 }
 
-  
-.networks{
-    position: fixed;
-    bottom: 0;
-    right:0;
-    z-index: 10;
-    
-    display: flex;
-    background: $red-primary;
-    justify-content: center;
-    align-items: center;
-    a{
-      text-transform: uppercase;
-      text-decoration: none;
-      padding: 15% 1rem;
-      color: $light-primary;
-      &:hover{
-        background: $dark;
-        height: 100px ;
-        width: 100%;
-      }
+
+.networks {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+
+  display: flex;
+  background: $red-primary;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15% 1rem;
+    color: $light-primary;
+
+    &:hover {
+      background: $dark;
+      height: 100px;
+      width: 100%;
+    }
+  }
+
+  img {
+    width: 2rem;
+  }
+
+
 }
 
-    img{
-      width: 2rem;
-      }
 
-
-      }
-      
-      
+@media (max-width: $tablet) {
+  .brand {
+    position: fixed;
+    margin-left: 0;
+    font-size: 5rem;
+  }
+  .navbar{
+    .nav-links{
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+  .rrss{
+    cursor: pointer; 
+  }
+}
