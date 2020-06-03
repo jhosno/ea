@@ -35,13 +35,6 @@
 
 
     li {
-      .navbar-brand {
-        font-size: 2rem;
-        color: $red-primary;
-        font-weight: 900;
-        visibility: hidden;
-
-      }
 
       display: inline-block;
       padding: 1.5rem;
@@ -68,6 +61,12 @@
     .hireme {
       color: $red-primary;
       font-weight: 900;
+
+    }
+
+    ul .nav-brand{
+      display: none;
+      
 
     }
   }
@@ -111,14 +110,26 @@
     position: fixed;
     margin-left: 0;
     font-size: 5rem;
+    display: none;
   }
   .navbar{
+    display: inline-block;
+    width: 100%;
     .nav-links{
+      padding: 1;
+      font-size: 2rem;
       font-size: 1.5rem;
       cursor: pointer;
     }
+
   }
   .rrss{
     cursor: pointer; 
+  }
+
+  .nav-brand{
+    display: inline;
+    
+    
   }
 }
