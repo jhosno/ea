@@ -1,29 +1,3 @@
-/*
------------------
---bg parallax--
------------------
-*/
-#parallelogram {
-
-  z-index: -1;
-
-  .parallelogram-wrap {
-    height: 85vh;
-    width: 100%;
-    position: absolute;
-    top: 180%;
-
-    .parallelogram {
-      position: absolute;
-      -webkit-mask-image: url("../images/arrow-path-2.svg");
-      -webkit-mask-size: cover;
-      mask-image: url("../images/arrow-path-2.svg");
-      mask-size: cover;
-      height: 100%;
-      width: 100%;
-    }
-  }
-}
 
 
 /*

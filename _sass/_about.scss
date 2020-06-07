@@ -1,3 +1,31 @@
+
+/*
+-----------------
+--bg parallax--
+-----------------
+*/
+#parallelogram {
+
+  z-index: -1;
+
+  .parallelogram-wrap {
+    height: 85vh;
+    width: 100%;
+    position: absolute;
+    top: 180%;
+
+    .parallelogram {
+      position: absolute;
+      -webkit-mask-image: url("../images/arrow-path-2.svg");
+      -webkit-mask-size: cover;
+      mask-image: url("../images/arrow-path-2.svg");
+      mask-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
 /*
 -----------------
 ----about me----
@@ -46,12 +74,16 @@
   #about {
     flex-flow: column;
     align-items: center;
-
+    margin-bottom: 0;
+    margin: .5rem;
+    
+    div{
+      margin-bottom: 0;
+    }
   }
 
-  .about-img{
-    img{
-      padding: 0;
+  .about-img {
+    img {
       width: 50vw;
     }
   }
@@ -59,11 +91,10 @@
   .me {
     width: 80%;
     padding: 2rem;
-    padding-bottom: 5rem;
-    background: $light-primary;
+    
     p {
       font-size: 1.5rem;
+      background: $light-primary;
     }
-    
   }
 }

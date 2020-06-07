@@ -113,6 +113,7 @@
 
   .navbar {
     display: inline-block;
+    right: 0;
     width: 100%;
     justify-content: end;
 
@@ -123,17 +124,28 @@
       cursor: pointer;
     }
 
-    ul .nav-brand {
-      display: inline;
-      cursor: pointer;
+    li {
+      display: inline-block;
+      padding: .5rem;
 
-      .brand-link {
-        color: $red-primary;
-        font-weight: 900;
-        font-size: 2.5rem;
-        padding: 2rem 0;
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: .5rem;
       }
     }
+
+      ul .nav-brand {
+        display: inline;
+        cursor: pointer;
+
+        .brand-link {
+          color: $red-primary;
+          font-weight: 900;
+          font-size: 2.5rem;
+          padding: 2rem 0;
+        }
+      }
   }
 
   .rrss {
