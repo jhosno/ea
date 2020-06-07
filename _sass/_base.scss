@@ -36,7 +36,9 @@ h3{
 
   z-index: -1;
 
-  img {
+  .super {
+    visibility: visible;
+
     position: fixed;
     margin: 0;
     padding: 0;
@@ -47,8 +49,22 @@ h3{
     -webkit-transform: translate(-505, -50%);
     transform: translate(-505, -50%);
   }
+  .min{
+    //display: none;
+    visibility: hidden;
+  }
+  
 }
 
+@media screen and (max-width: $tablet) {
+
+  .super{
+    visibility: hidden;
+  }
+  .min{
+    visibility: visible;
+  }
+}
 
 
 /*

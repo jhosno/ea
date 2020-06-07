@@ -32,32 +32,33 @@
 -----------------
 */
 
-footer{
+footer {
   position: relative;
-  
+
   height: 12vh;
   background-color: $red-primary;
   color: $light-primary;
-  p{
+
+  p {
     margin-block-start: 0;
     padding-top: 1.5rem;
     text-align: center;
-    
+
   }
 }
 
 
-@media (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
   #parallelogram {
 
     z-index: -1;
-  
+
     .parallelogram-wrap {
       height: 85vh;
       width: 100%;
       position: absolute;
       top: 211%;
-  
+
       .parallelogram {
         position: absolute;
         -webkit-mask-image: url("../images/arrow-path-2.svg");

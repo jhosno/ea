@@ -50,7 +50,7 @@
     }
 
 
-    .nav-links{
+    .nav-links {
       text-decoration: none;
       color: $light-primary;
       text-justify: center;
@@ -64,11 +64,20 @@
 
     }
 
-    ul .nav-brand{
+    ul .nav-brand {
       display: none;
-      
 
+      .brand-link {
+
+        color: $red-primary;
+        font-weight: 900;
+        font-size: 2.5rem;
+
+      }
     }
+
+
+
   }
 }
 
@@ -105,31 +114,40 @@
 }
 
 
-@media (max-width: $tablet) {
+@media screen and (max-width: $tablet) {
   .brand {
-    position: fixed;
-    margin-left: 0;
-    font-size: 5rem;
     display: none;
   }
-  .navbar{
+
+  .navbar {
     display: inline-block;
     width: 100%;
-    .nav-links{
+    justify-content: end;
+
+    .nav-links {
       padding: 1;
       font-size: 2rem;
       font-size: 1.5rem;
       cursor: pointer;
+
+
     }
 
   }
-  .rrss{
-    cursor: pointer; 
+
+  .rrss {
+    cursor: pointer;
   }
 
-  .nav-brand{
+  .nav-brand {
     display: inline;
-    
-    
+    cursor: pointer;
+    .brand-link{
+      color: $red-primary;
+      font-weight: 900;
+      font-size: 2.5rem;
+
+    }
   }
+
 }
