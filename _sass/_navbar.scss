@@ -6,7 +6,6 @@
 
 .brand {
   position: fixed;
-
   margin-left: 5rem;
   font-weight: 900;
   font-size: 4rem;
@@ -32,12 +31,15 @@
     width: 100%;
     margin-block-start: 0;
 
-
-
     li {
-
       display: inline-block;
       padding: 1.5rem;
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+      }
 
       &:hover {
         background: $red-primary;
@@ -45,38 +47,28 @@
 
         a {
           color: $dark;
+
         }
       }
     }
-
 
     .nav-links {
       text-decoration: none;
       color: $light-primary;
       text-justify: center;
-      font-weight: 500;
-      font-size: 1rem;
+
     }
 
     .hireme {
       color: $red-primary;
       font-weight: 900;
-
-    }
-
-    ul .nav-brand {
-      display: none;
-
-      .brand-link {
-
-        color: $red-primary;
-        font-weight: 900;
-        font-size: 2.5rem;
-
-      }
     }
 
 
+  }
+
+  ul .nav-brand {
+    display: none;
 
   }
 }
@@ -129,25 +121,22 @@
       font-size: 2rem;
       font-size: 1.5rem;
       cursor: pointer;
-
-
     }
 
+    ul .nav-brand {
+      display: inline;
+      cursor: pointer;
+
+      .brand-link {
+        color: $red-primary;
+        font-weight: 900;
+        font-size: 2.5rem;
+        padding: 2rem 0;
+      }
+    }
   }
 
   .rrss {
     cursor: pointer;
   }
-
-  .nav-brand {
-    display: inline;
-    cursor: pointer;
-    .brand-link{
-      color: $red-primary;
-      font-weight: 900;
-      font-size: 2.5rem;
-
-    }
-  }
-
 }
