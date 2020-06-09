@@ -23,7 +23,7 @@ email: amandaescalona30@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   🦉🤓Nerd freelancer: Redactora de contenido, copy writer, community manager, escritora por las noches 🦇 y lectora ávida ⚡. ¡Lista para generar contenido persuasivo que aumente tus ventas!🖤
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://amandaescalona.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: ""https://amandaescalona.github.io"" # the base hostname & protocol for your site, e.g. http://example.com
 social:
   name: Amanda Escalona
   links:
