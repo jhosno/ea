@@ -1,0 +1,106 @@
+/*
+-----------------
+--hero parallax--
+-----------------
+*/
+.pallarax-wrap {
+  height: 150%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+
+
+  .corner {
+    position: absolute;
+    -webkit-mask-image: url("../images/hero-def.svg");
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url("../images/hero-def.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .pallarax-wrap {
+    margin-top: 4rem;
+  }
+
+}
+
+/*
+-----------------
+--bg polygom--
+-----------------
+*/
+#polygom  {
+  z-index: -1;
+  height: 100%;
+  .polygom-wrap {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 180%;
+
+    .polygom{
+      position: absolute;
+      -webkit-mask-image: url("../images/arrow-path-2.svg");
+      -webkit-mask-size:  100% ;
+      -webkit-mask-repeat: no-repeat;
+      mask-image: url("../images/arrow-path-2.svg");
+      mask-size: 100%;
+      mask-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  #polygom  {
+    .polygom-wrap { 
+      .polygom{
+        -webkit-mask-size:  cover ;
+        mask-size:  cover ;
+        
+      }
+    }
+  }
+
+}
+
+/*
+-----------------
+--bg parallax--
+-----------------
+*/
+#rectangle {
+  position: relative;
+  z-index: -3;
+
+  .rectangle-wrap {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+
+
+    .rectangle {
+      position: absolute;
+      -webkit-mask-image: url("../images/rectangle-path-2.svg");
+      -webkit-mask-size: 100%;
+      mask-image: url("../images/rectangle-path-2.svg");
+      mask-size: cover;
+      //height: 100%;
+      width: 100%;
+    }
+
+    .gradient-contact {
+      background: $red-second;
+      background: linear-gradient(95deg, rgba(113, 22, 29, 0.6) 0%, rgba(197, 2, 2, 0.5) 85%);
+      mix-blend-mode: hard-light;
+      z-index: -1;
+    }
+  }
+}

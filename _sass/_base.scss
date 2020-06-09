@@ -33,17 +33,13 @@ h3{
 }
 .doddles {
   background: $red-primary;
-
   z-index: -1;
-
-  .super {
+  .super{
     visibility: visible;
-
     position: fixed;
     margin: 0;
     padding: 0;
-    font-size: 6rem;
-    width: 110vw;
+    width: 135vw;
     top: -12%;
     left: -4%;
     -webkit-transform: translate(-505, -50%);
@@ -52,17 +48,17 @@ h3{
   .min{
     //display: none;
     visibility: hidden;
+
   }
   
 }
 
 @media screen and (max-width: $tablet) {
-
   .super{
-    visibility: hidden;
+    visibility: visible;
   }
   .min{
-    visibility: visible;
+    visibility: hidden;
   }
 }
 

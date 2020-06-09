@@ -23,17 +23,19 @@ footer {
 
 
 @media screen and (max-width: $tablet) {
-  #parallelogram {
-
+  footer{
+    height: 20vh;
+  }
+  #polygom  {
     z-index: -1;
 
-    .parallelogram-wrap {
+    .polygom -wrap {
       height: 85vh;
       width: 100%;
       position: absolute;
       top: 211%;
 
-      .parallelogram {
+      .polygom  {
         position: absolute;
         -webkit-mask-image: url("../images/arrow-path-2.svg");
         -webkit-mask-size: cover;

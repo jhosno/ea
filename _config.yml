@@ -18,12 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Amanda Escalona
+title: Amanda Escalona | Escritora
 email: amandaescalona30@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Writer & copywriter
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  🦉🤓Nerd freelancer: Redactora de contenido, copy writer, community manager, escritora por las noches 🦇 y lectora ávida ⚡. ¡Lista para generar contenido persuasivo que aumente tus ventas!🖤
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: ""https://amandaescalona.github.io"" # the base hostname & protocol for your site, e.g. http://example.com
+social:
+  name: Amanda Escalona
+  links:
+    - https://www.instagram.com/nadhiadarkworld/
+    - https://www.linkedin.com/mwlite/in/amanda-escalona-370a29145
+    - https://github.com/amandaescalona
+
+lang: es_ES
 path: "/:basename"
 twitter_username: nadhia
 github_username:  amandaescalona
@@ -36,8 +44,14 @@ defaults:
       image: true
 # Build settings
 theme: minima
+
+
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -22,7 +22,7 @@
     width: 30%;
     height: 100%;
     text-align: center;
-    align-content: center;  
+    align-content: center;
     align-items: center;
     justify-content: center;
 
@@ -67,16 +67,56 @@
 }
 
 @media screen and (max-width: $tablet) {
-  .gallery-cell{
+  .gallery-cell {
+    height: 60vh;
+    margin-right: .5rem;
+    padding: 3rem;    
     flex-flow: column;
-    height: 50vh;
-    align-items: center;
     justify-content: center;
-    p{
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-      text-align: center;
+    align-content: center;
+  
+    .left {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+  
+      img {
+        height: auto;
+        width: 10rem;
+      }
+    }
+  
+    .right {
+      width: 100%;
+      text-align: justify;
+  
+      .right-head {
+        display: flex;
+        justify-content: center;
+        
+        h4 {
+          font-size: 1.5rem;
+          color: $red-primary;
+          font-weight: 900;
+          line-height: 0;
+          margin-top: 15.92;
+          margin-bottom: 12px;
+          margin-top: 5px;
+        }
+  
+        .testimonials-data {
+          line-height: -1;
+          font-style: italic;
+          margin-block-start: 0em;
+          margin-block-end: 0em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+  
+        }
+      }
+  
     }
   }
-  
+
 }
