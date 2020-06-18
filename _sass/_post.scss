@@ -1,0 +1,27 @@
+#post {
+  .post-img {
+    margin: 0;
+    width: 100%;
+    background: $light-primary;
+    margin-block: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .post-content {
+    padding: 3rem;
+    background: $light-primary;
+
+    span,
+    p {
+      color: $dark;
+    }
+    a{
+      color: $red-second;
+    }
+  }
+
+
+}

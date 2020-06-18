@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Portfolio"
 date:   2020-03-02 18:48:03 -0400
 categories: jekyll update
