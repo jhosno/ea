@@ -1,0 +1,24 @@
+/*
+-----------------
+---blog header---
+-----------------
+*/
+
+#blog-header {
+  margin-top: 10rem;
+  height: 100%;
+  width: 100%;
+  display: flexbox;
+
+  h2 {
+    text-align: center;
+    line-height: 0;
+    letter-spacing: 1.5rem;
+    font-size: 8rem;
+
+    &:nth-child(1) {
+      font-size: 6rem;
+      letter-spacing: .5rem;
+    }
+  }
+}

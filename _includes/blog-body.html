@@ -1,0 +1,24 @@
+<section id="blog-body">
+
+    <div class="post-list">
+        {% for post in site.posts %}
+        {% if post.project == null %}
+        <ul>
+            <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                <a href="{{ site.url }}{{ post.url }}">
+                    <img src="assets/images/posts/{{post.image}}" alt="{{ page.alt }}">
+                </a>
+                <div class="card-content">
+                    <span>{{post.date}}</span>
+                    <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Leer más</a>
+                </div>
+
+            </li>
+        </ul>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+</section>

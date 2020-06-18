@@ -104,3 +104,46 @@
     }
   }
 }
+
+
+/*
+-----------------
+--BLOG --
+--BLOG --
+--BLOG --
+--BLOG --
+--BLOG --
+--BLOG --
+--BLOG --
+-----------------
+-----header------
+-----------------
+*/
+.blog-hero-wrap {
+  height: 150%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0; 
+
+  .blog-hero {
+    position: absolute;
+    -webkit-mask-image: url("../images/blog-header.svg");
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-image: url("../images/blog-header.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .pallarax-wrap {
+    margin-top: 4rem;
+  }
+
+}
+
+

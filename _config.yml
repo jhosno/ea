@@ -20,19 +20,32 @@
 
 title: Amanda Escalona | Escritora
 email: amandaescalona30@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description:  >- # this means to ignore newlines until "baseurl:"
   🦉🤓Nerd freelancer: Redactora de contenido, copy writer, community manager, escritora por las noches 🦇 y lectora ávida ⚡. ¡Lista para generar contenido persuasivo que aumente tus ventas!🖤
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://amandaescalona.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+bio:  "¿Ratón de biblioteca? Es posible, tanto así que he vivido gran parte de mi vida con un libro debajo del brazo. Entonces quise hacer de la literatura mi vida y estudié letras en la Universidad Católica Andrés Bello. Luego de eso me encontré, de un golpe inesperado, con el marketing, entonces uní mi amor por escribir, con el amor por la tecnología y la comunicación, y me convertí en mi yo de ahora: Redactora de contenido, community manager, escritora por las noches y lectora ávida.
+He escrito de todo un poco, desde
+tecnología, hasta medicina y psicología infantil. Asimismo, me gusta investigar, estudiar el tema que estoy
+trabajando y escribir con la mayor fidelidad posible, es decir, siempre hago un estudio de vocabulario o
+terminología antes de realizar el trabajo."
+
+logo: 
+#baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "https://amandaescalona.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+#social 
+lang: es_ES
 social:
   name: Amanda Escalona
   links:
-    - https://www.instagram.com/nadhiadarkworld/
-    - https://www.linkedin.com/mwlite/in/amanda-escalona-370a29145
-    - https://github.com/amandaescalona
+    - instagram: https://www.instagram.com/nadhiadarkworld/
+    - linkedin: https://www.linkedin.com/mwlite/in/amanda-escalona-370a29145
+    - github: https://github.com/amandaescalona
+    - urania: 
 
-lang: es_ES
-path: "/:basename"
+
+#path: "/:basename"
 twitter_username: nadhia
 github_username:  amandaescalona
 instagram_username: urania.digital

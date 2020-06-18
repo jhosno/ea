@@ -1,0 +1,49 @@
+#blog-body {
+  margin: 5rem;
+  background: $dark;
+  padding: 2rem;
+
+
+  .post-list {
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+      li {
+        width: 25%;
+        display: flex;
+        flex-flow: column;
+        background: $light-primary;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+
+        }
+
+        .card-content {
+          padding: 2rem;
+        }
+
+        a {
+
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: $red-primary;
+        }
+
+        .btn {
+          font-size: 1rem;
+          text-align: right;
+        }
+
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
