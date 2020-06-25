@@ -82,7 +82,7 @@
   bottom: 0;
   right: 0;
   z-index: 10;
-  bottom: 0;
+
 
   display: flex;
   background: $red-primary;
@@ -139,20 +139,89 @@
       }
     }
 
-      ul .nav-brand {
-        display: inline;
-        cursor: pointer;
+    ul .nav-brand {
+      display: inline;
+      cursor: pointer;
 
-        .brand-link {
-          color: $red-primary;
-          font-weight: 900;
-          font-size: 2.5rem;
-          padding: 2rem 0;
-        }
+      .brand-link {
+        color: $red-primary;
+        font-weight: 900;
+        font-size: 2.5rem;
+        padding: 2rem 0;
       }
+    }
   }
 
   .rrss {
     cursor: pointer;
   }
+}
+
+@media screen and (max-width: $phone) {
+
+//hamburger menu pendiente 
+
+
+  .brand {
+    display: none;
+  }
+
+  .navbar {
+    display: inline-block;
+    right: 0;
+    width: 100%;
+    justify-content: end;
+
+    .nav-links {
+      padding: 1;
+      font-size: 2rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    li {
+      display: inline-block;
+      padding: .5rem;
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: .5rem;
+      }
+    }
+
+    ul .nav-brand {
+      display: inline;
+      cursor: pointer;
+
+      .brand-link {
+        color: $red-primary;
+        font-weight: 900;
+        font-size: 2.5rem;
+        padding: 2rem 0;
+      }
+    }
+  }
+
+  .networks {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+
+
+    width: 100%;
+
+    ul {
+      margin-block: 0;
+      padding-right: 1rem;
+      justify-content: center;
+    }
+  }
+
+  .rrss {
+    cursor: pointer;
+    
+  }
+
 }

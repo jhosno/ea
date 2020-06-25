@@ -62,7 +62,36 @@
   }
 
   .me {
-    width: 80%;
+margin: 0;
+    background: $light-primary;
+    
+    
+    p {
+      font-size: 1.5rem;
+      
+      //margin: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: $phone) {
+  #about {  
+    width: 100px;
+    div{
+      margin-bottom: 0;
+    }
+  }
+
+  .about-img {
+    margin-top: 10rem;
+    width: 100%;
+    img {
+      width: 50vw;
+    }
+  }
+
+  .me {
+    width: 100%;
     height: 100%;
     padding: 1rem;
     padding-bottom: 5rem;
@@ -71,9 +100,8 @@
     
     
     p {
-      font-size: 1.5rem;
-      
-      margin: 2rem;
+      font-size: 1rem;
+      //margin: 1rem;
     }
   }
 }

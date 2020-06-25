@@ -35,6 +35,18 @@ h3{
   padding: 2rem;
 }
 
+@media screen and (max-width: $tablet) {
+  body{
+    margin-top: 0.5rem;
+  }
+
+}
+@media screen and (max-width: $phone) {
+  body{
+    margin-top: 0.5rem;
+  }
+
+}
 
 /*
 -----------------
