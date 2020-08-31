@@ -21,36 +21,44 @@
   }
 }
 
-.navbar {
+.menu-box,
+.menu-button {
+  display: none;
+}
+
+#navbar {
   position: fixed;
-  right: 2.5rem;
+  right: 0rem;
+  padding: 0 0 0 2rem;
   text-transform: uppercase;
   z-index: 10;
   top: 0;
+  display: inline-flex;
+  background: $dark;
 
-  ul {
+  #menu {
     list-style: none;
-    background: $dark;
     width: 100%;
     margin-block-start: 0;
+    margin-block-end: 0;
+  }
 
-    li {
+    .nav-element, li {
       display: inline-block;
       padding: 1.5rem;
 
       a {
         text-decoration: none;
         font-weight: 500;
-        font-size: 1rem;
+        font-size: 1.3rem;
       }
 
       &:hover {
         background: $red-primary;
-        font-weight: 900;
-
+       
         a {
+          font-weight: 900;
           color: $dark;
-
         }
       }
     }
@@ -59,7 +67,6 @@
       text-decoration: none;
       color: $light-primary;
       text-justify: center;
-
     }
 
     .hireme {
@@ -67,15 +74,23 @@
       font-weight: 900;
     }
 
+    .portfolio {
+      color: $light-primary;
+      background: $red-primary;
+      font-size: 1.3rem;
 
-  }
+      &:hover {
+        color: $red-primary;
+        background: $light-primary;
+        font-weight: 900;
+      }
+    }
 
-  ul .nav-brand {
+ .nav-brand {
     display: none;
 
   }
 }
-
 
 .networks {
   position: fixed;
@@ -114,22 +129,98 @@
   .brand {
     display: none;
   }
+  .rrss {
+    cursor: pointer;
+  }
 
-  .navbar {
+  .burger {
+    position: absolute;
+    right: 11px;
+    top: 4px;
     display: inline-block;
+  }
+
+  .menu-box {
+    display: none;
+  }
+
+  .menu-button {
+    width: 1.3em;
+    height: 1.3em;
+    display: inline-block;
+    margin: 1rem;
+    padding: .5rem .5rem 0 0;
+    outline: none;
+    position: absolute;
+    right: .5em;
+    cursor: pointer;
+    top: .2em;
+    display: inline-block;
+
+    .line {
+      background: $light-primary;
+      display: block;
+      height: .3rem;
+      width: 2rem;
+      margin: 0;
+      padding: 0;
+      transition: all 200ms;
+      border-radius: 4px;
+    }
+
+    .line:not(:last-of-type) {
+      margin-bottom: .5rem;
+    }
+  }
+
+  .menu-box:checked+.menu-button .line:nth-child(1) {
+    transform:
+      rotate(45deg) translateX(2.5px) translateY(-1.25px);
+    -webkit-transform:
+      rotate(45deg) translateX(2.5px) translateY(-1.25px);
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+  }
+
+  .menu-box:checked+.menu-button .line:nth-child(2) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform-origin: center;
+    -webkit-transform-origin: center;
+  }
+
+  .menu-box:checked+.menu-button .line:nth-child(3) {
+    transform:
+      rotate(-45deg) translateX(2.5px) translateY(1.5px);
+    -webkit-transform:
+      rotate(-45deg) translateX(2.5px) translateY(1.5px);
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+  }
+
+  #navbar {
+    display: inline-flex;
     right: 0;
     width: 100%;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    .bt{
+      padding: 0 5rem 0 0;
+    }
+
+  
 
     .nav-links {
-      padding: 1;
+      
       font-size: 2rem;
       font-size: 1.5rem;
       cursor: pointer;
     }
 
     li {
-      display: inline-block;
+      
       padding: .5rem;
 
       a {
@@ -139,38 +230,62 @@
       }
     }
 
-    ul .nav-brand {
+    .nav-brand {
       display: inline;
       cursor: pointer;
+            
 
-      .brand-link {
+      a {
+        padding-left: 2rem;
+        text-decoration: none;
         color: $red-primary;
         font-weight: 900;
-        font-size: 2.5rem;
-        padding: 2rem 0;
+        font-size: 3rem;
+        text-justify: center;
       }
     }
   }
 
-  .rrss {
-    cursor: pointer;
+  #menu {
+    padding-top: 6rem;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $darkest;
+    background: linear-gradient(360deg, $dark 0%, $darkest 100%);
+    text-align: center;
+    top: -120%;
+    z-index: -1;
+    -webkit-transition: top .5s;
+    transition: top .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    il{
+      padding: 2rem;  
+    }
+  }
+
+  .menu-box:checked~ #menu {
+    display: flex;
+    flex-direction: column;
+    top: 0;
   }
 }
 
 @media screen and (max-width: $phone) {
-
-//hamburger menu pendiente 
-
-
-  .brand {
-    display: none;
-  }
-
-  .navbar {
+/*
+ 
+  #navbar {
     display: inline-block;
     right: 0;
     width: 100%;
     justify-content: end;
+
+    .bt{
+
+    }
 
     .nav-links {
       padding: 1;
@@ -202,6 +317,7 @@
       }
     }
   }
+  */
 
   .networks {
     position: fixed;
@@ -221,7 +337,7 @@
 
   .rrss {
     cursor: pointer;
-    
+
   }
 
 }
