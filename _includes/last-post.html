@@ -6,7 +6,9 @@
     <div class="col-5">
 
       {% for post in site.posts limit:3 %}
-      <div style="background: green;">{{ post.title}}</div>
+        <div class="post-card">
+          <img src="{{post.img}}" alt="">
+        </div>
       {% endfor %}
 
     </div>
