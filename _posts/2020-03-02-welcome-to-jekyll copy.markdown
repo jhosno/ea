@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Portfolio"
+title:  "Cosas interantes"
 date:   2020-03-02 18:48:03 -0400
 categories: jekyll update
 image: cannabis.jpg

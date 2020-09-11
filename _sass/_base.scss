@@ -5,9 +5,14 @@
 -----------------
 */
 $center: "-center";
-@for $i from 1 through 4{
-  .cols-#{$i}{
-    width: $i * 25%;   
+@for $i from 1 through 8{
+  .col-#{$i}{
+    //background: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: $i * 12%;   
     padding: 1em;
     margin: 1em
   }
@@ -15,17 +20,17 @@ $center: "-center";
 
 }
 
-@media screen and (min-width: $tablet){
+@media screen and (max-width: $tablet){
   @for $i from 1 through 2{
-    .cols-#{$i}{
+    .col-#{$i}{
       width: $i * 50%;
     }
   }
 }
 
-@media screen and (min-width: $phone){
+@media screen and (max-width: $phone){
   @for $i from 1 through 4{
-    .cols-#{$i}{
+    .col-#{$i}{
       width: 100%;
     }
   }
@@ -33,7 +38,8 @@ $center: "-center";
 
 
 .row{
-  display: flex;
+  //  background: rebeccapurple;
+  display: inline-flex;
   justify-content: right;
   
 
@@ -121,19 +127,33 @@ body{
   font-family: $title;
   margin-block: 0;
 }
-
-h2 {
-  font-size: 4.5rem;
+h1{
+  font-size: $size-9;
   color: $light-primary;
   line-height: 2.5rem;
   letter-spacing: .6rem;
   margin-bottom: 4.5rem;
+  font-weight: $weight-bold;
   text-transform: uppercase;
 }
+h2 {
+  font-size: $size-7;
+  color: $light-primary;
+  line-height: 2.5rem;
+  letter-spacing: .6rem;
+  margin-bottom: 4.5rem;
+  font-weight: $weight-semibold;
+  text-transform: uppercase;
+  
+  
+}
+
+
 
 h3{
-  font-size: 3rem;
+  font-size: $size-5;
   color: $red-second;
+  font-weight: $weight-semibold;
   letter-spacing: .5rem;
   text-align: center;
   text-transform: uppercase;
@@ -166,7 +186,7 @@ h3{
 
 .gradient {
   background: $red-second;
-  background: linear-gradient(146deg, rgba(41, 41, 41, 0.6) 0%, rgba(197, 2, 2, 0.5) 85%);
+  background: linear-gradient(-146deg, rgba(41, 41, 41, 0.6) 0%, rgba(197, 2, 2, 0.5) 85%);
   mix-blend-mode: hard-light;
   z-index: -1;
 }
