@@ -3,7 +3,7 @@ layout: post
 title:  "no deberías ver este post"
 date:   2020-03-02 18:48:03 -0400
 categories: jekyll update
-image: cannabis.jpg
+image: insectos.jpg
 alt: El cannabis y sus propiedades curativas en el cabello
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

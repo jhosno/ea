@@ -3,15 +3,17 @@
     <div class="col-3">
       <h3>Lo último</h3>
     </div>
-    <div class="col-5">
+    
 
       {% for post in site.posts limit:3 %}
-        <div class="post-card">
-          <img src="{{post.img}}" alt="">
+        <div class="post-card col-1">
+          <a href="{{ site.url }}{{ post.url }}">
+            <img src="assets/images/posts/{{post.image}}" alt="{{ page.alt }}">
+        </a>
         </div>
       {% endfor %}
 
-    </div>
+    
   </div>
 
 

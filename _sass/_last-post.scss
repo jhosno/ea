@@ -6,5 +6,21 @@
 
 #last-post{
   background: $dark;
+
+  h3{
+    color: $red-primary;
+    font-weight: $weight-bold;
+  }
+}
+
+
+.post-card{
+  background: $light-primary;
+  padding: 1rem 1.5rem 3rem 1.5rem;
   
+  a img{
+    display: relative;
+    width: auto;
+    height: 8rem;  
+  }
 }
