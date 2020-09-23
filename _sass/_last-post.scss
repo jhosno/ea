@@ -24,3 +24,11 @@
     height: 8rem;  
   }
 }
+
+@media screen and (max-width: $tablet){
+  #last-post{
+    .row {
+      flex-wrap: wrap;
+    }
+  }
+}
