@@ -100,57 +100,20 @@
     }
   }
 }
-
+*/
 @media screen and (max-width: $tablet) {
   #hero {
     height: 100%;
     padding-top: 10vh;
     
   }
-
-  .welcome {
-    flex-flow: column-reverse;
-    align-items: center;
-    justify-content: center;
-    height: 70vh;
-
-    .col-left {
-      padding: 0;
-      
-
-      h1 {
-        font-size: 5rem;
-        letter-spacing: .1rem;
-        color: $red-second;
-      }
-
-      .name {
-        font-size: 6rem;
-        letter-spacing: .6rem;
-        color: $red-second;
-      }
-
-      h2 {
-        font-size: 4rem;
-        letter-spacing: .4rem;
-        color: $red-second;
-      }
-
-
+  #hello {
+    h1 {
+      color: $red-primary;
     }
-
-    .col-right {
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 50%;
-        align-self: center;
-        justify-self: center;
-      }
+    
+    h2 {
+      color: $dark;
     }
   }
 }
-**/
