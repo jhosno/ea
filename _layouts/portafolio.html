@@ -6,12 +6,43 @@
 
     {% include nav.html %}
 
-    {% include blog-header.html %}
 
-    {% include blog-body.html %}
+  <section class="container">
+
+ 
+      <img src="assets/images/ae-404.png" alt="Amanda Escalona | No hemos encontradoesa página" id="404-cat">
+  
+    <h3>¡En contrucción!</h3>
+    <p>Estamos trabajando en el portafolio</p>
+    <a href="/">
+      <button class="btn-cta">Volver a la página principal</button>
+    </a>
+  </section>
 
     {% include footer.html %}
-
+    <style type="text/css" media="screen">
+        .container {
+          
+          margin: 5rem  auto 2rem auto;
+          max-width: 600px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+    
+        h1 {
+          margin: 30px 0;
+          font-size: 4em;
+          line-height: 1;
+          letter-spacing: -1px;
+        }
+        img{
+          width: 100%;
+          height: auto;
+        }
+      </style>
+    
 </body>
 
 </html>

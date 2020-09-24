@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: portafolio
-title: Portafolio
+title: Portafolio en contrución
 permalink: /portafolio
 ---

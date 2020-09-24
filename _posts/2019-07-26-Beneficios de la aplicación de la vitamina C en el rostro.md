@@ -3,7 +3,7 @@ layout: post
 title:  Beneficios de la aplicación de la vitamina C en el rostro
 
 categories: salud
-image: vitamina-c.jpg
+image: vitamina-c-2.jpg
 alt: Beneficios de la aplicación de la vitamina C en el rostro
 ---
 En nuestro cuerpo necesitamos constantemente una gran cantidad de vitaminas, de diferentes tipos. Tanto para mantener en alto nuestra salud, como para tener el cabello brilloso y la piel bonita. Por lo tanto, es importante recordar, que las vitaminas pueden funcionar tanto de manera interna como externamente, dándonos incontables beneficios. A veces es necesario que usemos diferentes vitaminas para ayudarnos a mejorar ciertas cosas de nuestro cuerpo.

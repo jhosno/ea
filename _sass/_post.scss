@@ -13,7 +13,13 @@
   .post-content {
     padding: 3rem;
     background: $light-primary;
-
+    h2 {
+      color: $red-second;
+      font-size: 2rem;
+    }
+    img{
+      width: 50vw;
+    }
     span,
     p {
       color: $dark;
@@ -29,6 +35,7 @@
       font-size: 1.5rem;
       
     }
+
   }
 
 
