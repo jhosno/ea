@@ -109,11 +109,12 @@
   }
   #hello {
     h1 {
-      color: $red-primary;
+      color: $red-second;
     }
-    
+
     h2 {
-      color: $dark;
+      color: $red-primary;
+
     }
   }
 }
