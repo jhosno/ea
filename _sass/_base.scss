@@ -206,27 +206,29 @@ h3{
     -webkit-transform: translate(-505, -50%);
     transform: translate(-505, -50%);
   }
-  .min{
-    //display: none;
-    overflow: hidden;
-    visibility: hidden;
-    display: none;
 
-  }
   
 }
 
 @media screen and (max-width: $tablet) {
-  .super{
-    visibility: visible;
+  .doddles{
+    .super{
     
-  }
-  .min{
-    visibility: hidden;
-    display: block;
+     
+      width: 135vw;
+    }
   }
 }
+@media screen and (max-width: $phone) {
 
+  .doddles{
+    .super{
+  
+      width: 135vw;
+    }
+  }
+  
+} 
 
 /*
 -----------------

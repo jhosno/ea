@@ -29,6 +29,14 @@
 @media screen and (max-width: $tablet) {
   .pallarax-wrap {
     margin-top: 4rem;
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: $phone) {
+  .pallarax-wrap {
+    margin-top: 4rem;
+    width: 130%;
   }
 
 }
