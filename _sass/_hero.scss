@@ -105,17 +105,48 @@
 @media screen and (max-width: $tablet) {
   #hero {
     height: 100%;
-    padding-top: 10vh;
-    
+ 
   }
   #hello {
-    h1 {
-      color: $red-second;
-    }
-
-    h2 {
+    flex-direction: column;
+    h1{
       color: $red-primary;
-
     }
+    h2{
+      color: $dark;
+      font-size: 2rem;
+      line-height: $size-9;
+    }
+    h1:nth-child(1) {
+      letter-spacing: 1.75rem;
+      line-height: 1rem;
+      font-size: 2rem;
+      margin: 0;
+    }
+    h1:nth-child(2){
+      font-size: 2rem;
+      
+      margin: 0;
+    }
+    h2:nth-child(3) {
+      font-size: 2rem;
+        margin: 0 0;
+        line-height: 1rem;
+      text-transform: capitalize;
+    }
+    h2:nth-child(4) {
+      font-size: 2rem;
+      margin: 0 0 3rem 0;
+      text-transform: capitalize;
+    }
+  }
+  
+  #amanda-intro {
+    height: 35em;
+    width: auto;
+  }
+  #amanda-intro {
+    height: 15em;
+    width: auto;
   }
 }

@@ -20,7 +20,7 @@
     mask-size: 100%;
     mask-repeat: no-repeat;
     overflow-x: visible;
-    overflow-x: hidden;
+    overflow-y: hidden;
     height: 150%;
     width: 100%;
   }
@@ -36,7 +36,8 @@
 @media screen and (max-width: $phone) {
   .pallarax-wrap {
     margin-top: 4rem;
-    width: 130%;
+    width: 100%;
+    
   }
 
 }
