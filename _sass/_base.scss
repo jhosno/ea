@@ -104,6 +104,9 @@ $center: "-center";
     align-items: center;
   }
 }
+.column{
+  flex-direction: column;
+}
 
 .row{
   #{$center}{
@@ -178,58 +181,7 @@ h3{
 
 }
 
-/*
------------------
---- parallax ----
------------------
-*/
 
-.gradient {
-  background: $red-second;
-  background: linear-gradient(345deg, rgba(41, 41, 41, 0.6) 0%, rgba(197, 2, 2, 0.5) 85%);
-  mix-blend-mode: hard-light;
-  z-index: -1;
-}
-.doddles {
-  background: $red-primary;
-  z-index: -1;
-  .super{
-    visibility: visible;
-    overflow: hidden;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    width: 105vw;
-    //width: 135vw;
-    top: -12%;
-    left: -4%;
-    -webkit-transform: translate(-505, -50%);
-    transform: translate(-505, -50%);
-  }
-
-  
-}
-
-@media screen and (max-width: $tablet) {
-  .doddles{
-    .super{
-    
-      overflow: hidden;
-
-      width: 135vw;
-    }
-  }
-}
-@media screen and (max-width: $phone) {
-
-  .doddles{
-    .super{
-      overflow: hidden;
-      width: 135vw;
-    }
-  }
-  
-} 
 
 /*
 -----------------

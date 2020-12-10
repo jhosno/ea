@@ -8,7 +8,8 @@
       {% for post in site.posts limit:3 %}
         <div class="post-card col-1">
           <a href="{{ site.url }}{{ post.url }}">
-            <img src="assets/images/posts/{{post.image}}" alt="{{ page.alt }}">
+            <img src="assets/images/posts/{{post.image}}" alt="{{ page.alt }}"><br>
+            {{ post.title }}
         </a>
         </div>
       {% endfor %}

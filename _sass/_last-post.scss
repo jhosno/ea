@@ -16,13 +16,20 @@
 
 .post-card{
   background: $light-primary;
-  padding: 1rem 1.5rem 3rem 1.5rem;
+  padding: 1rem 1rem 2rem 1rem;
   
-  a img{
+  a{
+    text-decoration: none;  
+    color: $red-primary;
+    text-align: center;
+   img{
     display: relative;
     width: auto;
     height: 8rem;  
+    text-decoration: none;
+    color: $dark;
   }
+}
 }
 
 @media screen and (max-width: $tablet){
