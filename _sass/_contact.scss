@@ -37,6 +37,10 @@
       margin-left: 1.5rem;
       background: $light-primary;
 
+      h3{
+        //
+      }
+
       p {
         line-height: 1.5rem;
         text-align: justify;
@@ -48,7 +52,11 @@
         justify-content: center;
         flex-flow: column;
       }
-
+      label{
+        text-align: left;
+        font-weight: 900;
+        align-self: left;
+      }
       input,
       textarea {
         font-family: $title;
@@ -59,7 +67,7 @@
         background: $light-second;
         font-size: 1rem;
         border: .2rem solid $dark;
-        text-align: center;
+        text-align: left;
         resize: none;
         padding: .5rem;
         margin-top: .5rem;
@@ -98,13 +106,17 @@
       .form {
         width: 100%;
 
+        h3{
+          font-size: 1.5rem;
+        }
+
         form {
           display: flex;
           flex-flow: column;
 
           input,
           textarea {
-            font-size: 1.5rem;
+            font-size: 1rem;
             display: block;
             width: 100%;
             padding: 1rem 0;
@@ -115,7 +127,7 @@
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
 
       img {
